@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"menu\startup_stm32f410rx.o"
+"menu\main.o"
+"menu\stm32f4xx_it.o"
+"menu\stm32f4xx_hal_msp.o"
+"menu\stm32f4xx_hal_adc.o"
+"menu\stm32f4xx_hal_adc_ex.o"
+"menu\stm32f4xx_hal_rcc.o"
+"menu\stm32f4xx_hal_rcc_ex.o"
+"menu\stm32f4xx_hal_flash.o"
+"menu\stm32f4xx_hal_flash_ex.o"
+"menu\stm32f4xx_hal_flash_ramfunc.o"
+"menu\stm32f4xx_hal_gpio.o"
+"menu\stm32f4xx_hal_dma_ex.o"
+"menu\stm32f4xx_hal_dma.o"
+"menu\stm32f4xx_hal_pwr.o"
+"menu\stm32f4xx_hal_pwr_ex.o"
+"menu\stm32f4xx_hal_cortex.o"
+"menu\stm32f4xx_hal.o"
+"menu\stm32f4xx_hal_exti.o"
+"menu\stm32f4xx_hal_tim.o"
+"menu\stm32f4xx_hal_tim_ex.o"
+"menu\stm32f4xx_hal_uart.o"
+"menu\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Menu\Menu.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Menu.map" -o Menu\Menu.axf

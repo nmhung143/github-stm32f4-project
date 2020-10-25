@@ -1,0 +1,99 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Nguyen Manh Hung, HUST, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+C:\Users\nmanh\Documents\CubeMX\Menu\MDK-ARM\Menu.uvprojx
+Project File Date:  10/25/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Menu'
+compiling main.c...
+../Core/Src/main.c(19): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(EN_Port,EN_Pin,1);
+../Core/Src/main.c(21): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(EN_Port,EN_Pin,0);	
+../Core/Src/main.c(27): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(D4_Port,D4_Pin,Data&0x01);
+../Core/Src/main.c(28): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(D5_Port,D5_Pin,(Data>>1)&0x01);
+../Core/Src/main.c(29): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(D6_Port,D6_Pin,(Data>>2)&0x01);
+../Core/Src/main.c(30): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(D7_Port,D7_Pin,(Data>>3)&0x01);	
+../Core/Src/main.c(50): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(RS_Port,RS_Pin,0);
+../Core/Src/main.c(84): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(RS_Port,RS_Pin,1);
+../Core/Src/main.c(86): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(RS_Port,RS_Pin,0);
+../Core/Src/main.c(109): warning:  #1295-D: Deprecated declaration getVolt - give arg types
+  char getVolt();
+../Core/Src/main.c(110): warning:  #1295-D: Deprecated declaration getTemp - give arg types
+  uint8_t getTemp();
+../Core/Src/main.c(112): warning:  #1295-D: Deprecated declaration firstPage - give arg types
+  void firstPage();
+../Core/Src/main.c(115): warning:  #1295-D: Deprecated declaration keyScan - give arg types
+  int keyScan();
+../Core/Src/main.c(383): warning:  #111-D: statement is unreachable
+    HAL_Delay(50);
+../Core/Src/main.c(359): warning:  #177-D: variable "i"  was declared but never referenced
+    int i, key;
+../Core/Src/main.c(359): warning:  #177-D: variable "key"  was declared but never referenced
+    int i, key;
+../Core/Src/main.c(444): warning:  #175-D: subscript out of range
+  	return DATA[27];
+../Core/Src/main.c(644): warning:  #188-D: enumerated type mixed with another type
+                            |D5_Pin|D6_Pin|D7_Pin, GPIO_PIN_RESET);
+../Core/Src/main.c(647): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11|GPIO_PIN_12|GPIO_PIN_15, GPIO_PIN_RESET);
+../Core/Src/main.c: 19 warnings, 0 errors
+linking...
+Program Size: Code=9548 RO-data=520 RW-data=292 ZI-data=1508  
+FromELF: creating hex file...
+"Menu\Menu.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Menu
+  C:\Users\nmanh\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\nmanh\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
